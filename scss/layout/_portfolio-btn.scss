@@ -1,0 +1,28 @@
+.portfolio-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  max-width: 326px;
+  justify-content: left;
+  margin-bottom: 40px;
+  &-current {
+    background-color: #2196f3;
+    color: var(--main-white);
+  }
+
+  //   breakpoint  768px for tablet screen
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+  }
+}

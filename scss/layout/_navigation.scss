@@ -1,0 +1,64 @@
+.nav {
+  &__list {
+    display: none;
+
+    //   breakpoint  768px for tablet screen
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      margin-right: 96px;
+    }
+    //   breakpoint  1200px for descktop screen
+    @media screen and (min-width: 1200px) {
+      margin-right: 315px;
+    }
+  }
+}
+.nav__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  color: #212121;
+  display: block;
+  padding: 32px 0;
+  transition: color $animation;
+
+  //   breakpoint  768px for tablet screen
+  @media screen and (min-width: 768px) {
+    &:focus {
+      color: var(--accent-txt-cl);
+    }
+  }
+
+  //   breakpoint  1200px for descktop screen
+  @media screen and (min-width: 1200px) {
+    &:hover,
+    &:focus {
+      color: var(--accent-txt-cl);
+    }
+  }
+
+  &--current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+    color: var(--accent-txt-cl);
+  }
+
+  &--current::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-txt-cl);
+    border-radius: 2px;
+  }
+}
