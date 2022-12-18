@@ -172,11 +172,13 @@
   }
 }
 .checkbox {
+  
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-
+  
   &__group {
+    
     position: relative;
     display: flex;
     align-items: center;
@@ -211,6 +213,7 @@
   }
 }
 .checkbox__icon {
+  
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -227,11 +230,14 @@
     transform: background-color $animation;
     transform: background-image $animation;
     border-color: transparent;
+    
+    
   }
   .checkbox__input:hover + &,
   .checkbox__input:focus + & {
     border: 2px solid var(--accent-txt-cl);
     border-radius: 2px;
     transform: border-color $animation;
+  
   }
 }
