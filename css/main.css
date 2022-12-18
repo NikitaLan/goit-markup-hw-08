@@ -479,11 +479,7 @@ body {
 }
 
 .portfolio-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  position: relative;
   overflow: hidden;
 }
 .portfolio-overlay-text {
@@ -851,7 +847,6 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
   border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img-1@1x_sm.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -940,6 +935,14 @@ body {
   line-height: 1.71em;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 767px) {
+  .about__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .about__list {
     display: flex;
@@ -955,7 +958,6 @@ body {
 }
 .about__item {
   max-width: 450px;
-  padding-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .about__item {
