@@ -2,6 +2,8 @@
 
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/breakpoints';
+
 
 // Base styles
 
@@ -27,3 +29,4 @@
 @import './layout/footer';
 @import './layout/portfolio-btn';
 @import './layout/portfolio-cards';
+

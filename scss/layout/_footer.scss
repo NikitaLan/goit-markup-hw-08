@@ -71,18 +71,24 @@
     justify-content: center;
     gap: 10px;
   }
-  &-text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+ 
+}
 
-    color: #ffffff;
-    margin-bottom: 20px;
-
-    text-align: center;
+.footer-conect-text {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
   }
+  
 }
 
 .footer-link,
