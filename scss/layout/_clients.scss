@@ -3,7 +3,7 @@
 
   &-title {
     font-weight: 700;
-    font-size: 33px;
+    font-size: 28px;
     line-height: 1.18em;
     text-align: center;
     letter-spacing: 0.03em;
@@ -12,30 +12,43 @@
     text-align: center;
     margin-bottom: 30px;
 
-    &-item {
-      
-      @media screen and (max-width: 767px) {
     
-        width: calc((100% - 30px) /2);
-        
-      }
-
-      
-     //   breakpoint  768px for tablet screen
-     @media screen and (min-width: 768px) {
-     
-      width: calc((100% - 60px) /3);
-      padding: 60px 0;
-    }
-  }
 
 
     //   breakpoint  1200px for descktop screen
     @media screen and (min-width: 1200px) {
       font-size: 36px;
       line-height: 1.17em;
+      margin-bottom: 50px;
     }
   }
+
+  &-item {
+      
+    @media screen and (max-width: 767px) {
+  
+      width: calc((100% - 30px) /2);
+      
+    }
+
+    
+   //   breakpoint  768px for tablet screen
+   @media screen and (min-width: 768px) {
+   
+    width: calc((100% - 60px) /3);
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+    width: calc((100% - 150px) /6);
+  }
+
+
+
+}
+
+
   &-list {
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +76,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   background-color: var(--main-white);
   border: 1px solid #afb1b8;

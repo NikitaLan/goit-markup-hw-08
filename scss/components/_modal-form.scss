@@ -220,6 +220,7 @@
   margin-right: 8px;
   border: 2px solid var(--dark-bg-cl);
   border-radius: 2px;
+  flex-shrink: 0;
   transition: $animation;
   .checkbox__input:checked + & {
     background-color: var(--accent-txt-cl);

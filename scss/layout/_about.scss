@@ -17,7 +17,7 @@
 
     //   breakpoint  480px for mobile screen
     @media screen and (max-width: 767px) {
-      text-align: center;
+      
     }
   }
 
@@ -26,12 +26,18 @@
     font-size: 14px;
     line-height: 1.71em;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 480px) {
+      text-align: left;
+      
+    }
+
   }
 
   &__list {
 
      //   breakpoint  480px for mobile screen
-     @media screen and (max-width: 767px) {
+     @media screen and (max-width: 480px) {
       text-align: center;
       display: flex; 
       flex-direction: column; 
